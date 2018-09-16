@@ -30,7 +30,7 @@ update_b = tf.assign(b, new_b)
 
 train_op = [update_a, update_b] 
 # End of defining of data flow gragh
-# Attention, until now, we haven't any actually data calculation, just defined a data flow gragh
+# Attention, until now, we haven't do any actually data calculation, just defined a data flow gragh
 
 num_epoch = 10000
 learning_rate = 1e-3
