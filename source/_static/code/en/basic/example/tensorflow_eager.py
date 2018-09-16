@@ -22,7 +22,7 @@ for e in range(num_epoch):
     y_pred = a * X + b
     loss = 0.5 * tf.reduce_sum(tf.square(y_pred - y)) # loss = 0.5 * np.sum(np.square(a * X + b - y))
 
-    # Bakc propagation, calculate gradient of variables(model parameters) manualy
+    # Back propagation, calculate gradient of variables(model parameters) manualy
     grad_a = tf.reduce_sum((y_pred - y) * X)
     grad_b = tf.reduce_sum(y_pred - y)
 
