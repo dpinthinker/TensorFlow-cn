@@ -2,7 +2,7 @@ import tensorflow as tf
 
 a = tf.get_variable(name='a', shape=[])
 initializer = tf.assign(a, 0)   # tf.assign(x, y) will return a operation “assign Tensor y's value to Tensor x”
-a_plus_1 = a + 1    # equal to a + tf.constant(1)
+a_plus_1 = a + 1    # Equal to a + tf.constant(1)
 plus_one_op = tf.assign(a, a_plus_1)
 
 sess = tf.Session()
