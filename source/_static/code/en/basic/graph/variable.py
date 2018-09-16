@@ -9,5 +9,5 @@ sess = tf.Session()
 sess.run(initializer)
 for i in range(5):
     sess.run(plus_one_op)                   # Do plus one operation to a
-    a_ = sess.run(a)                        # Compute a‘s value and put the result to a_
+    a_ = sess.run(a)                        # Calculate a‘s value and put the result to a_
     print(a_)
