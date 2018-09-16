@@ -37,7 +37,7 @@ learning_rate = 1e-3
 with tf.Session() as sess:
     # Initialize variables a and b
     tf.global_variables_initializer().run()
-    # put data input the data flow gragh created above to calculate and update variables
+    # Put data in the data flow gragh created above to calculate and update variables
     for e in range(num_epoch):
         sess.run(train_op, feed_dict={X_: X, y_: y, learning_rate_: learning_rate})
     print(sess.run([a, b]))
